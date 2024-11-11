@@ -1,7 +1,7 @@
-# TXProxyServer 프로젝트
+# Java-Backend-ProtocolToJson-Module 프로젝트
 
 ## 프로젝트 개요
-TXProxyServer는 클라이언트의 요청을 받아 외부 웹 서비스와 통신하는 프록시 서버입니다. 서버는 클라이언트의 요청을 받아 `RequestHandler`를 통해 외부 웹 서비스와 상호작용하고, 응답을 클라이언트에게 반환합니다.
+Java-Backend-ProtocolToJson-Module 클라이언트의 요청을 받아 외부 웹 서비스와 통신하는 프록시 서버입니다. 서버는 클라이언트의 요청을 받아 `RequestHandler`를 통해 외부 웹 서비스와 상호작용하고, 응답을 클라이언트에게 반환합니다.
 
 ## 프로젝트 구조
 
