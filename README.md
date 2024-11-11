@@ -56,7 +56,7 @@ public class TXProxyServer {
 }
 ```
 
-### 2. TXProxyClient 클래스**
+### 2. **TXProxyClient 클래스**
 - **역할**: 클라이언트 요청을 처리하고 응답을 반환하는 스레드입니다.
 - **기능**:
   - 클라이언트로부터 요청 메시지를 읽고, 이를 RequestHandler에 전달하여 웹 서비스 요청을 처리
@@ -89,7 +89,7 @@ public class TXProxyServer {
 }
 ```
 
-### 3. RequestHandler 클래스**
+### 3. **RequestHandler 클래스**
 - **역할**: 요청 메시지를 처리하고 웹 서비스와의 상호작용을 담당합니다.
 - **기능**:
   - 요청 메시지를 WebServiceClient에 전달하여 웹 서비스 응답을 받아옴
@@ -127,7 +127,7 @@ public class TXProxyServer {
 ```
 
 
-### 4. WebServiceClient 클래스**
+### 4. **WebServiceClient 클래스**
 - **역할**: 외부 웹 서비스와의 통신을 담당합니다.
 - **기능**:
 - HttpConnection을 사용하여 웹 서비스 URL에 POST 요청을 보냄
