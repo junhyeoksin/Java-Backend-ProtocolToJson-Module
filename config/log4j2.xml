@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%d{yy-MM-dd HH:mm:ss.sss}] %-5level %logger{36} [%M:%L] - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Logger name="com.n2soft" level="debug" />
+ 		<Logger name="moasb" level="debug" /> 
+
+		<Root level="debug">
+			<AppenderRef ref="console" />
+		</Root>
+	</Loggers>
+
+</Configuration>

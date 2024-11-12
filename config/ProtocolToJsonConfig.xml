@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProtocolToJsonConfig>
+
+    <system>
+        <name>Java-Backend-ProtocolToJson-Module</name>
+        <path>@{ProtocolToJson.home}</path>
+    </system>
+
+	<log>
+		<path>@{ProtocolToJson.home}/logs</path>
+		<date_pattern>.yyyyMMdd</date_pattern>
+		<line_pattern>[%d{yyyy-MM-dd HH:mm:ss}]-[%-5p] %m%n</line_pattern>
+	</log>
+ 
+
+	<test> 
+		<service_port>7777</service_port>
+		<len_width>10</len_width>
+		<len_include>Y</len_include>  
+		<webservice_url></webservice_url>
+	</test>
+ 
+ </ProtocolToJsonConfig>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="Java"/>
+	<classpathentry kind="lib" path="lib/commons-codec-1.14.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-net-3.6.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-api-2.17.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-core-2.17.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-jcl-2.17.0.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-slf4j-impl-2.17.0.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.7.32.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-dbcp2-2.9.0.jar" sourcepath="C:/Users/kwanj/AppData/Local/Temp/.org.sf.feeling.decompiler1647227719330/source/commons-dbcp2-2.9.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="lib/commons-pool2-2.11.1.jar"/>
+	<classpathentry kind="lib" path="config"/>
+	<classpathentry kind="output" path="classes"/>
+</classpath>
