@@ -5,8 +5,9 @@
 ####  Java-Backend-ProtocolToJson-Module 클라이언트의 요청을 받아 외부 웹 서비스와 통신하는 프록시 서버입니다.
 #### 서버는 클라이언트의 요청을 받아 `JsonWebClient`를 통해 외부 서비스와 상호작용하고, 응답을 클라이언트에게 반환합니다.
 
-## 프로젝트 구조
+* * *
 
+## 프로젝트 구조
 
 | 클래스 이름               | 역할 설명                                                                                                                                 |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -15,7 +16,7 @@
 | RequestProcessor          | 요청 처리 및 외부 서비스 호출                                                                                                           |
 | JsonWebClient             | 외부 서비스와의 통신 담당                                                                                                               |
 
-
+* * *
 ### 1. **ProtocolToJsonServer 클래스**
 ### **역할**: ProtocolToJsonServer 클래스는 핵심 컴포넌트로서, 설정된 포트에서 클라이언트의 전문 요청을 수신하고, 이 요청을 JSON 형식으로 변환하는데 중점을 둡니다.
 ### **✨ 주요 기능**
@@ -41,7 +42,7 @@ main(String[] argv): 애플리케이션의 시작점으로, 초기 설정을 확
 initializeConfig(String[] argv): proxy_id에 따라 서버 설정을 로드하고 유효성을 검증합니다. 잘못된 설정이 있을 경우 로그에 에러 메시지를 남기고 서버를 중단합니다.
 handleClientConnection(ServerSocket server): 클라이언트가 연결되면 ProtocolClientHandler 객체를 생성하여 클라이언트 요청을 비동기적으로 처리합니다. 연결 과정에서 발생하는 예외를 개별적으로 로깅하여 문제를 추적할 수 있게 합니다.
 
-
+* * *
 
 ```java
 public class ProtocolToJsonServer {
@@ -108,7 +109,7 @@ public class ProtocolToJsonServer {
      }
  }
 ```
-
+* * *
 
 ### 2. **ProtocolClientHandler 클래스**
 ### **역할**: 클라이언트 요청을 처리하고 응답을 반환하는 스레드입니다. ProtocolToJsonServer에서 클라이언트가 연결될 때마다 새로운 인스턴스가 생성되어, 각 클라이언트 요청을 개별 스레드에서 처리할 수 있게 설계되었습니다.
@@ -131,7 +132,7 @@ TXSocket을 통해 클라이언트로부터 요청 메시지를 읽어옵니다.
 ### 리소스 관리 및 연결 종료 (closeConnection 메서드)
 요청 처리가 완료된 후, TXSocket을 통해 클라이언트와의 연결을 종료합니다.
 리소스를 안전하게 해제하기 위해 finally 블록에서 항상 호출됩니다.
-
+* * *
 
 ```java
 public class ProtocolClientHandler extends Thread {
@@ -193,7 +194,7 @@ public class ProtocolClientHandler extends Thread {
 }
 
 ```
-
+* * *
 ### 3. **JsonRequestProcessor 클래스**
 ### **역할**: 클라이언트로부터 전달받은 JSON 형식의 요청 메시지를 처리하는 역할을 합니다
 ### **✨ 주요 기능**
@@ -216,7 +217,7 @@ WebService 호출: JsonWebClient 클래스를 사용하여 WebService에 요청�
 WebService 호출 중 오류 발생: 호출이 실패하면 IllegalStateException 예외를 던져 적절한 오류 메시지를 반환합니다.
 응답 파싱 중 오류 발생: 응답 JSON을 파싱하는 중 오류가 발생하면, 파싱 오류를 처리하여 기본 오류 메시지를 반환합니다.
 
-
+* * *
 ```java
 public class JsonRequestProcessor {
     
@@ -264,7 +265,7 @@ public class JsonRequestProcessor {
 
 ```
 
-
+* * *
 ### 4. **JsonWebClient 클래스**
 ### **역할**: 외부 WebService와 통신하여 JSON 형식의 데이터를 주고받는 역할을 합니다. requestData를 HTTP 요청으로 변환하여 WebService에 전송하고, 그 응답을 받아옵니다.
 ### **✨ 주요 기능**
@@ -284,7 +285,7 @@ WebService 호출이나 응답 처리 중 발생하는 예외를 catch 블록에
 
 #####  JsonWebClient 클래스는 WebService와의 HTTP 통신을 통해 데이터를 주고받고, 발생하는 예외를 처리하여 안정적인 서비스를 제공합니다. 이 클래스는 WebService 호출을 캡슐화하여, 시스템에서 외부 API와의 통신을 처리하는 중요한 역할을 담당합니다.
 
-
+* * *
 ```java
   public class JsonWebClient {
 
