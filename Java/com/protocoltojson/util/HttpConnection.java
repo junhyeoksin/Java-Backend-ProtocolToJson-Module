@@ -1,4 +1,4 @@
-package com.protocolToJson.util;
+package com.protocoltojson.util;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -16,7 +16,7 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSession;
 
-import com.protocolToJson.common.StringMap;
+import com.protocoltojson.common.StringMap;
 
 public class HttpConnection {
 

@@ -1,4 +1,4 @@
-package com.protocolToJson.util;
+package com.protocoltojson.util;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -20,9 +20,9 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import com.protocolToJson.common.DataMap;
-import com.protocolToJson.common.DataMapList;
-import com.protocolToJson.common.StringMap;
+import com.protocoltojson.common.DataMap;
+import com.protocoltojson.common.DataMapList;
+import com.protocoltojson.common.StringMap;
 
 @SuppressWarnings("unchecked")
 public class JSONUtil {

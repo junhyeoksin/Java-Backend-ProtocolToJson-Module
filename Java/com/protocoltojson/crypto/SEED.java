@@ -1,9 +1,9 @@
-package com.protocolToJson.crypto;
+package com.protocoltojson.crypto;
 
 import java.io.UnsupportedEncodingException;
 
-import com.protocolToJson.common.Env;
-import com.protocolToJson.common.UtilMgr;
+import com.protocoltojson.common.Env;
+import com.protocoltojson.common.UtilMgr;
 
 public class SEED {
 

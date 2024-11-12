@@ -1,8 +1,8 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
 import java.io.File;
 
-import com.protocolToJson.crypto.SEED;
+import com.protocoltojson.crypto.SEED;
 
 
 public class Env {

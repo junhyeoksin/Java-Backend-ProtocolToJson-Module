@@ -1,8 +1,8 @@
-package ProtocolToJson.txproxy;
+package com.protocoltojson.txproxy;
 
-import com.protocolToJson.common.DataMap;
-import com.protocolToJson.common.LogMgr;
-import com.protocolToJson.util.JSONUtil;
+import com.protocoltojson.common.DataMap;
+import com.protocoltojson.common.LogMgr;
+import com.protocoltojson.util.JSONUtil;
 
 public class JsonRequestProcessor {
     

@@ -1,4 +1,4 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -29,7 +29,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-import com.protocolToJson.crypto.AES256;
+import com.protocoltojson.crypto.AES256;
 
 
 public class UtilMgr {

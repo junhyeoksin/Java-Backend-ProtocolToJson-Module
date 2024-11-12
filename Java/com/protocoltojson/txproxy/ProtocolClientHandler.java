@@ -1,8 +1,8 @@
-package ProtocolToJson.txproxy;
+package com.protocoltojson.txproxy;
 
 import java.net.Socket;
-import com.protocolToJson.common.LogMgr;
-import com.protocolToJson.common.TXSocket;
+import com.protocoltojson.common.LogMgr;
+import com.protocoltojson.common.TXSocket;
 
 public class ProtocolClientHandler extends Thread {
 

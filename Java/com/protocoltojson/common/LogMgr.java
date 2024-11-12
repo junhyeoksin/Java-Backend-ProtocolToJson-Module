@@ -1,4 +1,4 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
 import org.slf4j.LoggerFactory;
 

@@ -1,9 +1,9 @@
- package ProtocolToJson.txproxy;
+ package com.protocoltojson.txproxy;
  
  import java.net.ServerSocket;
  import java.net.Socket;
- import com.protocolToJson.common.Env;
- import com.protocolToJson.common.LogMgr;
+ import com.protocoltojson.common.Env;
+ import com.protocoltojson.common.LogMgr;
 
  public class ProtocolToJsonServer {
      static final int MAX_WAIT = 60;

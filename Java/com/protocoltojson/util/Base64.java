@@ -1,4 +1,4 @@
-package com.protocolToJson.util;
+package com.protocoltojson.util;
 
 public class Base64 {
 

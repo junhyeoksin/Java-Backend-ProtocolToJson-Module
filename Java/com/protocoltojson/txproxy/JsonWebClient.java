@@ -1,9 +1,9 @@
-package ProtocolToJson.txproxy;
+package com.protocoltojson.txproxy;
 
-import com.protocolToJson.common.DataMap;
-import com.protocolToJson.util.HttpConnection;
-import com.protocolToJson.util.JSONUtil;
-import com.protocolToJson.common.LogMgr;
+import com.protocoltojson.common.DataMap;
+import com.protocoltojson.util.HttpConnection;
+import com.protocoltojson.util.JSONUtil;
+import com.protocoltojson.common.LogMgr;
 
 public class JsonWebClient {
 

@@ -1,4 +1,4 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
  
 import java.io.BufferedInputStream;
@@ -10,7 +10,7 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
-import com.protocolToJson.crypto.SEED;
+import com.protocoltojson.crypto.SEED;
 
 
 

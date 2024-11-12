@@ -1,4 +1,4 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.protocolToJson.common;
+package com.protocoltojson.common;
 
 import java.util.ArrayList;
 import java.util.List;

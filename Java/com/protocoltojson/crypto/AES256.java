@@ -1,4 +1,4 @@
-package com.protocolToJson.crypto;
+package com.protocoltojson.crypto;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -21,8 +21,8 @@ import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.codec.binary.Base64;
 
-import com.protocolToJson.common.Env;
-import com.protocolToJson.common.UtilMgr;
+import com.protocoltojson.common.Env;
+import com.protocoltojson.common.UtilMgr;
 
 public class AES256 {
 
